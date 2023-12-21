@@ -1,0 +1,15 @@
+        var sticker = StickersProvider.allStickers[2]
+        sticker.zPosition = 20
+        
+        let background = ShapeData(
+            elements: [.rectangle(.init(
+                origin: .zero,
+                size: .init(side: 1)
+            ))],
+final class AppStore: ObservableObject {
+    
+    @Published private(set) var state: AppState
+    
+    private var reducer: AppReducerProtocol
+    
+    private var backgroundRemoval: BackgroundRemovalProtocol
